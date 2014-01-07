@@ -16,6 +16,6 @@ it('should run a file through ngmin', function (cb) {
 	});
 
 	stream.write(new gutil.File({
-		contents: 'angular.module(\'whatever\').controller(\'MyCtrl\', function ($scope, $http) {});'
+		contents: new Buffer('angular.module(\'whatever\').controller(\'MyCtrl\', function ($scope, $http) {});')
 	}));
 });
