@@ -1,6 +1,6 @@
 {
   "name": "gulp-ngmin",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Pre-minify AngularJS apps with ngmin",
   "license": "MIT",
   "repository": "sindresorhus/gulp-ngmin",
