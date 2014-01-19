@@ -1,16 +1,18 @@
 'use strict';
 var gutil = require('gulp-util');
-var through = require('through');
+var through = require('through2');
 var ngmin = require('ngmin');
 
 module.exports = function () {
-	return through(function (file) {
+	return through.obj(function (file, enc, cb) {
 		if (file.isNull()) {
-			return this.queue(file);
+			this.push(file);
+			return cb();
 		}
 
 		if (file.isStream()) {
-			return this.emit('error', new gutil.PluginError('gulp-ngmin', 'Streaming not supported'));
+			this.emit('error', new gutil.PluginError('gulp-ngmin', 'Streaming not supported'));
+			return cb();
 		}
 
 		try {
@@ -19,6 +21,7 @@ module.exports = function () {
 			this.emit('error', new gutil.PluginError('gulp-ngmin', err));
 		}
 
-		this.queue(file);
+		this.push(file);
+		cb();
 	});
 };

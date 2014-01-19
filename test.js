@@ -1,6 +1,5 @@
 'use strict';
 var assert = require('assert');
-var fs = require('fs');
 var gutil = require('gulp-util');
 var ngmin = require('./index');
 
