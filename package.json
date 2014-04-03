@@ -31,9 +31,9 @@
     "compress"
   ],
   "dependencies": {
-    "gulp-util": "~2.2.6",
-    "through2": "~0.4.0",
-    "ngmin": "~0.4.0"
+    "gulp-util": "^2.2.6",
+    "ngmin": "^0.5.0",
+    "through2": "^0.4.0"
   },
   "devDependencies": {
     "mocha": "*"
