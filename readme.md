@@ -1,4 +1,4 @@
-# [gulp](https://github.com/wearefractal/gulp)-ngmin [![Build Status](https://secure.travis-ci.org/sindresorhus/gulp-ngmin.png?branch=master)](http://travis-ci.org/sindresorhus/gulp-ngmin)
+# [gulp](http://gulpjs.com)-ngmin [![Build Status](https://travis-ci.org/sindresorhus/gulp-ngmin.svg?branch=master)](https://travis-ci.org/sindresorhus/gulp-ngmin)
 
 > Pre-minify AngularJS apps with [ngmin](https://github.com/btford/ngmin)
 
@@ -7,14 +7,12 @@
 
 ## Install
 
-Install with [npm](https://npmjs.org/package/gulp-ngmin)
-
-```
-npm install --save-dev gulp-ngmin
+```bash
+$ npm install --save-dev gulp-ngmin
 ```
 
 
-## Example
+## Usage
 
 ```js
 var gulp = require('gulp');
@@ -30,4 +28,4 @@ gulp.task('default', function () {
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+[MIT](http://opensource.org/licenses/MIT) © [Sindre Sorhus](http://sindresorhus.com)
