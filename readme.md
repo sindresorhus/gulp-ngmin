@@ -19,7 +19,7 @@ var gulp = require('gulp');
 var ngmin = require('gulp-ngmin');
 
 gulp.task('default', function () {
-	gulp.src('src/app.js')
+	return gulp.src('src/app.js')
 		.pipe(ngmin())
 		.pipe(gulp.dest('dist'));
 });
