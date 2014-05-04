@@ -3,7 +3,7 @@ var gutil = require('gulp-util');
 var through = require('through2');
 var ngmin = require('ngmin');
 
-module.exports = function () {
+module.exports = function (options) {
 	return through.obj(function (file, enc, cb) {
 		if (file.isNull()) {
 			this.push(file);
@@ -16,7 +16,7 @@ module.exports = function () {
 		}
 
 		try {
-			file.contents = new Buffer(ngmin.annotate(file.contents.toString()));
+			file.contents = new Buffer(ngmin.annotate(file.contents.toString(), options));
 		} catch (err) {
 			this.emit('error', new gutil.PluginError('gulp-ngmin', err));
 		}

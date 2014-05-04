@@ -20,10 +20,22 @@ var ngmin = require('gulp-ngmin');
 
 gulp.task('default', function () {
 	return gulp.src('src/app.js')
-		.pipe(ngmin())
+		.pipe(ngmin({dynamic: true}))
 		.pipe(gulp.dest('dist'));
 });
 ```
+
+
+## API
+
+### ngmin(options)
+
+#### options.dynamic
+
+Type: `boolean`  
+Default: `false`
+
+Enables the [dynamic mode](https://github.com/btford/ngmin#dynamic-mode).
 
 
 ## License
