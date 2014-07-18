@@ -1,3 +1,7 @@
+### Deprecated in favor of [gulp-ng-annotate](https://github.com/Kagami/gulp-ng-annotate). [Reasoning](https://github.com/btford/ngmin/issues/93).
+
+---
+
 # [gulp](http://gulpjs.com)-ngmin [![Build Status](https://travis-ci.org/sindresorhus/gulp-ngmin.svg?branch=master)](https://travis-ci.org/sindresorhus/gulp-ngmin)
 
 > Pre-minify AngularJS apps with [ngmin](https://github.com/btford/ngmin)
